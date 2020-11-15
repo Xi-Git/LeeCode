@@ -16,11 +16,11 @@ public class Url {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		int len = sc.nextInt();
-		System.out.println(replaceSpaces(s, len).toString());
+		System.out.println(replaceSpaces_4(s, len));
 
 	}
 
-	// 解法一: 使用StringBuilder来实现(时间31)
+	// 解法一: 使用StringBuilder来实现(时间31)		stringbuilder执行速度慢可以使用stringbuffer
 	public static String replaceSpaces(String S, int length) {
 		char[] tmp = S.toCharArray();
 		StringBuilder tmp2 = new StringBuilder();
@@ -47,7 +47,14 @@ public class Url {
 
 	// 解法三:(时间10)
 	public static String replaceSpaces_3(String S, int length) {
-		char[] x = new char[length * 3];
+		
+//        int count=0;					//虽然使用count计数可以减少内存开销但是
+//        for(int i=0;i<length;i++){	//15ms
+//            if(S.charAt(i) == ' '){
+//                count++;
+//            }
+//        }
+        char[] x = new char[length * 3];
 		int index = 0;
 		for (int i = 0; i < length; i++) {
 			char ch = S.charAt(i);
@@ -60,6 +67,32 @@ public class Url {
 			}
 		}
 		return new String(x, 0, index);
+	}
+	//解法四：双指针法					执行用时短，内存消耗高；可以将tmp数字改为charAt方法 ；将会内存消耗大幅降低，执行时间提升
+	public static String replaceSpaces_4(String S, int length){
+      int count=0;
+      char[] tmp = S.toCharArray();
+      for(int i=0;i<length;i++){	
+          if(tmp[i] == ' '){
+              count++;
+          }
+      }
+      count = length + count*2;
+      int m = count-1;
+      char[] x= new char[count];
+      int i=length-1;
+      while( i>=0 ){
+    	  if( tmp[i]!= ' '){
+    		  x[m--] = tmp[i];
+    	  }else{
+    		  x[m--] = '0';
+    		  x[m--] = '2';
+    		  x[m--] = '%';
+    	  }
+    	  i--;
+      }
+      return new String(x,0,count);
+      
 	}
 
 }
