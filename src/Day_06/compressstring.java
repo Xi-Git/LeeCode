@@ -1,6 +1,5 @@
 package Day_06;
 
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class compressstring {
