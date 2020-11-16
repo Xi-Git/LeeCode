@@ -47,13 +47,6 @@ public class Url {
 
 	// 解法三:(时间10)
 	public static String replaceSpaces_3(String S, int length) {
-		
-//        int count=0;					//虽然使用count计数可以减少内存开销但是
-//        for(int i=0;i<length;i++){	//15ms
-//            if(S.charAt(i) == ' '){
-//                count++;
-//            }
-//        }
         char[] x = new char[length * 3];
 		int index = 0;
 		for (int i = 0; i < length; i++) {
@@ -74,7 +67,7 @@ public class Url {
       char[] tmp = S.toCharArray();
       for(int i=0;i<length;i++){	
           if(tmp[i] == ' '){
-              count++;
+              count++;						//使用count用于计算替换后的字符串长度，不和解法三一样浪费内存
           }
       }
       count = length + count*2;
