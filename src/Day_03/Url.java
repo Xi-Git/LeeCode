@@ -6,8 +6,8 @@ public class Url {
 
 	/**
 	 * https://leetcode-cn.com/problems/string-to-url-lcci/
-	 * URL»¯¡£±àĞ´Ò»ÖÖ·½·¨£¬½«×Ö·û´®ÖĞµÄ¿Õ¸ñÈ«²¿Ìæ»»Îª%20¡£¼Ù¶¨¸Ã×Ö·û´®Î²²¿ÓĞ×ã¹»µÄ¿Õ¼ä´æ·ÅĞÂÔö×Ö·û£¬
-	 * ²¢ÇÒÖªµÀ×Ö·û´®µÄ¡°ÕæÊµ¡±³¤¶È¡££¨×¢£ºÓÃJavaÊµÏÖµÄ»°£¬ÇëÊ¹ÓÃ×Ö·ûÊı×éÊµÏÖ£¬ÒÔ±ãÖ±½ÓÔÚÊı×éÉÏ²Ù×÷¡££©
+	 * URLåŒ–ã€‚ç¼–å†™ä¸€ç§æ–¹æ³•ï¼Œå°†å­—ç¬¦ä¸²ä¸­çš„ç©ºæ ¼å…¨éƒ¨æ›¿æ¢ä¸º%20ã€‚å‡å®šè¯¥å­—ç¬¦ä¸²å°¾éƒ¨æœ‰è¶³å¤Ÿçš„ç©ºé—´å­˜æ”¾æ–°å¢å­—ç¬¦ï¼Œ
+	 * å¹¶ä¸”çŸ¥é“å­—ç¬¦ä¸²çš„â€œçœŸå®â€é•¿åº¦ã€‚ï¼ˆæ³¨ï¼šç”¨Javaå®ç°çš„è¯ï¼Œè¯·ä½¿ç”¨å­—ç¬¦æ•°ç»„å®ç°ï¼Œä»¥ä¾¿ç›´æ¥åœ¨æ•°ç»„ä¸Šæ“ä½œã€‚ï¼‰
 	 * 
 	 * @param args
 	 */
@@ -20,16 +20,16 @@ public class Url {
 
 	}
 
-	// ½â·¨Ò»: Ê¹ÓÃStringBuilderÀ´ÊµÏÖ(Ê±¼ä31)		stringbuilderÖ´ĞĞËÙ¶ÈÂı¿ÉÒÔÊ¹ÓÃstringbuffer
+	// è§£æ³•ä¸€: ä½¿ç”¨StringBuilderæ¥å®ç°(æ—¶é—´31)		stringbuilderæ˜¯çº¿ç¨‹ä¸å®‰å…¨ç±»ï¼Œæ¯”stringbufferæ›´å¿«
 	public static String replaceSpaces(String S, int length) {
 		char[] tmp = S.toCharArray();
 		StringBuilder tmp2 = new StringBuilder();
 		/*
 		 * for(char x:tmp){ if(x == ' '){ tmp2.append("%20");
-		 * //ÕâÊÇ´íÎóµÄtmpÃ¿´Î¶¼»áÓĞ¶àÓàµÄ¿Õ¸ñ±»Ö´ĞĞ }else{ tmp2.append(String.valueOf(x)); } }
+		 * //è¿™æ˜¯é”™è¯¯çš„tmpæ¯æ¬¡éƒ½ä¼šæœ‰å¤šä½™çš„ç©ºæ ¼è¢«æ‰§è¡Œ }else{ tmp2.append(String.valueOf(x)); } }
 		 */
 
-		for (int i = 0; i < length; i++) { // ²»ÒªºöÂÔÌâÄ¿Ëù¸øµÄÒÑÖªÊı×é³¤¶È£¬·ñÔòµ±³ÌĞò½øĞĞµ½×îºó»á¶à³öÏÖ¼¸´ÎÑ­»·
+		for (int i = 0; i < length; i++) { // ä¸è¦å¿½ç•¥é¢˜ç›®æ‰€ç»™çš„å·²çŸ¥æ•°ç»„é•¿åº¦ï¼Œå¦åˆ™å½“ç¨‹åºè¿›è¡Œåˆ°æœ€åä¼šå¤šå‡ºç°å‡ æ¬¡å¾ªç¯
 			char x = tmp[i];
 			if (x == ' ') {
 				tmp2.append("%20");
@@ -40,20 +40,13 @@ public class Url {
 		return tmp2.toString();
 	}
 
-	// ½â·¨¶ş:£¨Ê±¼ä11£©
+	// è§£æ³•äºŒ:ï¼ˆæ—¶é—´11ï¼‰
 	public static String replaceSpaces_2(String S, int length) {
 		return S.substring(0, length).replace(" ", "%20");
 	}
 
-	// ½â·¨Èı:(Ê±¼ä10)
+	// è§£æ³•ä¸‰:(æ—¶é—´10)
 	public static String replaceSpaces_3(String S, int length) {
-		
-//        int count=0;					//ËäÈ»Ê¹ÓÃcount¼ÆÊı¿ÉÒÔ¼õÉÙÄÚ´æ¿ªÏúµ«ÊÇ
-//        for(int i=0;i<length;i++){	//15ms
-//            if(S.charAt(i) == ' '){
-//                count++;
-//            }
-//        }
         char[] x = new char[length * 3];
 		int index = 0;
 		for (int i = 0; i < length; i++) {
@@ -68,13 +61,13 @@ public class Url {
 		}
 		return new String(x, 0, index);
 	}
-	//½â·¨ËÄ£ºË«Ö¸Õë·¨					Ö´ĞĞÓÃÊ±¶Ì£¬ÄÚ´æÏûºÄ¸ß£»¿ÉÒÔ½«tmpÊı×Ö¸ÄÎªcharAt·½·¨ £»½«»áÄÚ´æÏûºÄ´ó·ù½µµÍ£¬Ö´ĞĞÊ±¼äÌáÉı
+	//è§£æ³•å››ï¼šåŒæŒ‡é’ˆæ³•					æ‰§è¡Œç”¨æ—¶çŸ­ï¼Œå†…å­˜æ¶ˆè€—é«˜ï¼›å¯ä»¥å°†tmpæ•°å­—æ”¹ä¸ºcharAtæ–¹æ³• ï¼›å°†ä¼šå†…å­˜æ¶ˆè€—å¤§å¹…é™ä½ï¼Œæ‰§è¡Œæ—¶é—´æå‡
 	public static String replaceSpaces_4(String S, int length){
       int count=0;
       char[] tmp = S.toCharArray();
       for(int i=0;i<length;i++){	
           if(tmp[i] == ' '){
-              count++;
+              count++;						//ä½¿ç”¨countç”¨äºè®¡ç®—æ›¿æ¢åçš„å­—ç¬¦ä¸²é•¿åº¦ï¼Œä¸å’Œè§£æ³•ä¸‰ä¸€æ ·æµªè´¹å†…å­˜
           }
       }
       count = length + count*2;
