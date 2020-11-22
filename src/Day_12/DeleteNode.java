@@ -1,7 +1,5 @@
 package Day_12;
 
-import Day_11.ToLast.ListNode;
-
 public class DeleteNode {
 
 	/**

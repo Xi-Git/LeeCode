@@ -24,6 +24,7 @@ public class Edit {
 		String a = sc.nextLine();
 		String b = sc.nextLine();
 		System.out.println(oneEditAway2(a, b));
+		sc.close();
 
 	}
 

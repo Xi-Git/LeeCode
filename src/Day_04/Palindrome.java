@@ -19,6 +19,7 @@ public class Palindrome {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		System.out.println(canPermutePalindrome(s));
+		sc.close();
 	}
 
 	//解法一:用时0ms

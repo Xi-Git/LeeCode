@@ -20,6 +20,7 @@ public class Rotate {
 			}
 		}
 		rotate(x);
+		sc.close();
 	}
 
 	public static void rotate(int[][] matrix) {

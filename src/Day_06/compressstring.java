@@ -16,6 +16,7 @@ public class compressstring {
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
 		System.out.println(compressString(s));
+		sc.close();
 
 	}
 

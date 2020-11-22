@@ -17,7 +17,7 @@ public class Unique {
 		s = sc.nextLine();
 		
 		System.out.println(Solution.isUnique(s));
-
+		sc.close();
 	}
 
 }

@@ -19,6 +19,7 @@ public class CheckPermutation {
 		String s1 = sc.nextLine();
 		String s2 = sc.nextLine();
 		System.out.println(CheckPermutation.judge(s1, s2));
+		sc.close();
 
 	}
 

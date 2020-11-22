@@ -22,6 +22,7 @@ public class MyPow {
 		a = sc.nextDouble();
 		b = sc.nextInt();
 		System.out.println(myPow(a,b));
+		sc.close();
 
 	}
 	
