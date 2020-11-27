@@ -1,5 +1,7 @@
 package Day_23;
 
+import java.math.BigDecimal;
+
 /*
  * https://leetcode-cn.com/problems/add-two-numbers/
  * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 
@@ -18,7 +20,7 @@ package Day_23;
      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  }
 class Sum {
-	//解法一：强行解,过了1565个用例还有三个用例过不去
+	//解法一：强行解,过了1565个用例还有三个用例过不去,换成BigDecimal能过过不过较慢
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         StringBuilder str1 = new StringBuilder();
         StringBuilder str2 = new StringBuilder();
@@ -31,9 +33,11 @@ class Sum {
         	l2 = l2.next;
         }
         
-       Long tmp1 = Long.parseLong(str1.reverse().toString());
-       Long tmp2 = Long.parseLong(str2.reverse().toString());
-       tmp1 = tmp2 + tmp1;
+//       Long tmp1 = Long.parseLong(str1.reverse().toString());
+//       Long tmp2 = Long.parseLong(str2.reverse().toString());
+       BigDecimal tmp1 = new BigDecimal((str1.reverse().toString()));
+       BigDecimal tmp2 = new BigDecimal((str2.reverse().toString()));
+       tmp1 = tmp1.add(tmp2);
        StringBuilder str3 = new StringBuilder();
        str3.append(tmp1.toString());
        str3.reverse();
