@@ -1,15 +1,17 @@
 package Day_25;
 
-import java.util.Arrays;
-
-import sun.applet.Main;
+/*
+ * https://leetcode-cn.com/problems/reverse-pairs/
+ * 给定一个数组 nums ，如果 i < j 且 nums[i] > 2*nums[j] 我们就将 (i, j) 称作一个重要翻转对。
+ * 你需要返回给定数组中的重要翻转对的数量。
+ */
 
 public class ReversePairs {
 	public static void main(String[] args) {
 		System.out.println(Integer.MAX_VALUE+ " " + Integer.MIN_VALUE);
 	}
 	
-	//������ʱ
+	//当场超时
     public int reversePairs(int[] nums) {
     	int len = nums.length;
     	int count = 0;
@@ -24,9 +26,9 @@ public class ReversePairs {
 		return count;
     }
     
-    //CV�Ĵ�
+    //CV的答案
     public int reversePairs2(int[] nums) {
-        // ʹ�ù鲢���򣬴�С����Ľ�������
+        // 使用归并排序，从小到大的进行排序
         if(nums.length < 2) {
             return 0;
         }
@@ -51,7 +53,7 @@ public class ReversePairs {
         int j = mid + 1;
         int res = 0;
         int flag = 0;
-        // ���㷭ת��
+        // 计算翻转对
         while(i <= mid && j <= right) {
             if(nums[i] > 2 * (long)nums[j]) {
                 res += mid - i + 1;
@@ -64,7 +66,7 @@ public class ReversePairs {
         i = left;
         j = mid + 1;
 
-        // ��������
+        // 进行排序
         while(i <= mid && j <= right) {
             
             if(nums[i] < nums[j]) {
