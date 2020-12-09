@@ -1,18 +1,17 @@
 package Day_02;
-
-//import java.util.ArrayList;
 import java.util.Arrays;
-//import java.util.HashSet;
 import java.util.Scanner;
 
+/**
+ * https://leetcode-cn.com/problems/check-permutation-lcci/ 
+ * 给定两个字符串 s1 和
+ * s2，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。
+ * 
+ * @param args
+ */
 public class CheckPermutation {
 
-	/**
-	 * https://leetcode-cn.com/problems/check-permutation-lcci/ 给定两个字符串 s1 和
-	 * s2，请编写一个程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。
-	 * 
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);

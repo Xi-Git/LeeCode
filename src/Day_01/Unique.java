@@ -1,5 +1,4 @@
 package Day_01;
-
 import java.util.HashSet;
 import java.util.Scanner;
 

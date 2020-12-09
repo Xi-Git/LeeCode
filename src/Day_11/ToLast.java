@@ -1,14 +1,13 @@
 package Day_11;
-
 import java.util.Stack;
-
+/**
+ * https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/
+ * 实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
+ * @param args
+ */
 public class ToLast {
 
-	/**
-	 * https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/
-	 * 实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

@@ -1,5 +1,11 @@
 package Day_10;
 import java.util.HashSet;
+/***
+ * https://leetcode-cn.com/problems/remove-duplicate-node-lcci/
+ * 编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
+ * @author MyPC
+ *
+ */
 // Definition for singly-linked list.
 class ListNode {
      int val;
@@ -7,12 +13,6 @@ class ListNode {
      ListNode(int x) { val = x; }
  }
 public class removeNodes {
-	/***
-	 * https://leetcode-cn.com/problems/remove-duplicate-node-lcci/
-	 * 编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
-	 * @author MyPC
-	 *
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

@@ -1,13 +1,11 @@
 package Day_08;
-
+/**
+ * https://leetcode-cn.com/problems/zero-matrix-lcci/ 编写一种算法，若M ×
+ * N矩阵中某个元素为0，则将其所在的行与列清零。
+ * 
+ * @param args
+ */
 public class SetZeroes {
-
-	/**
-	 * https://leetcode-cn.com/problems/zero-matrix-lcci/ 编写一种算法，若M ×
-	 * N矩阵中某个元素为0，则将其所在的行与列清零。
-	 * 
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

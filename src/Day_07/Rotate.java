@@ -1,15 +1,14 @@
 package Day_07;
-
 import java.util.Scanner;
-
+/**
+ * https://leetcode-cn.com/problems/rotate-matrix-lcci/ 给你一幅由 N × N
+ * 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。 不占用额外内存空间能否做到？
+ * 
+ * @param args
+ */
 public class Rotate {
 
-	/**
-	 * https://leetcode-cn.com/problems/rotate-matrix-lcci/ 给你一幅由 N × N
-	 * 矩阵表示的图像，其中每个像素的大小为 4 字节。请你设计一种算法，将图像旋转 90 度。 不占用额外内存空间能否做到？
-	 * 
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[][] x = new int[2][2];

@@ -1,16 +1,18 @@
 package Day_03;
-
 import java.util.Scanner;
+
+/**
+ * https://leetcode-cn.com/problems/string-to-url-lcci/
+ * 面试题 01.03. URL化
+ * URL化。编写一种方法，将字符串中的空格全部替换为%20。假定该字符串
+ * 尾部有足够的空间存放新增字符，并且知道字符串的“真实”长度。（注：
+ * 用Java实现的话，请使用字符数组实现，以便直接在数组上操作。） 
+ * @param args
+ */
 
 public class Url {
 
-	/**
-	 * https://leetcode-cn.com/problems/string-to-url-lcci/
-	 * URL鍖栥�傜紪鍐欎竴绉嶆柟娉曪紝灏嗗瓧绗︿覆涓殑绌烘牸鍏ㄩ儴鏇挎崲涓�%20銆傚亣瀹氳瀛楃涓插熬閮ㄦ湁瓒冲鐨勭┖闂村瓨鏀炬柊澧炲瓧绗︼紝
-	 * 骞朵笖鐭ラ亾瀛楃涓茬殑鈥滅湡瀹炩�濋暱搴︺�傦紙娉細鐢↗ava瀹炵幇鐨勮瘽锛岃浣跨敤瀛楃鏁扮粍瀹炵幇锛屼互渚跨洿鎺ュ湪鏁扮粍涓婃搷浣溿�傦級
-	 * 
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);

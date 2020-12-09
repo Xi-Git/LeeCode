@@ -1,19 +1,19 @@
 package Day_13; 
 import java.util.Scanner;
-
+/**
+ * https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/
+ * 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
+ * -100.0 < x < 100.0
+ * n 是 32 位有符号整数，其数值范围是 [−2^31, 2^31 − 1] 。   
+ * 注意负数区有一个2^31如果将它转换为正数记得减一，否则会超出最大能表示范围
+ * 否者会有以下用例过不去
+	1.00000
+	-2147483648
+ * @param args
+ */
 public class MyPow {
 
-	/**
-	 * https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/
-	 * 实现函数double Power(double base, int exponent)，求base的exponent次方。不得使用库函数，同时不需要考虑大数问题。
-	 * -100.0 < x < 100.0
-	 * n 是 32 位有符号整数，其数值范围是 [−2^31, 2^31 − 1] 。   
-	 * 注意负数区有一个2^31如果将它转换为正数记得减一，否则会超出最大能表示范围
-	 * 否者会有以下用例过不去
-		1.00000
-		-2147483648
-	 * @param args
-	 */
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		double a;

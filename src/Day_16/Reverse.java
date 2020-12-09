@@ -1,17 +1,12 @@
 package Day_16;
-
 import java.util.Arrays;
-
 /**
  * https://leetcode-cn.com/problems/valid-anagram/
  * 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
  * @author MyPC
  *
  */
-
 public class Reverse {
-
-	
 //	解法一
     public boolean isAnagram(String s, String t) {
     	int[] x = new int[28];
