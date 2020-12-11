@@ -1,7 +1,7 @@
 package Day_35;
 /*
- * 
- * 
+ * https://leetcode-cn.com/problems/max-number-of-k-sum-pairs/
+ * 1679. K 和数对的最大数目
  */
 
 

@@ -8,7 +8,12 @@ import java.util.Arrays;
  */
 import java.util.LinkedList;
 import java.util.List;
-
+/**
+ * https://leetcode-cn.com/problems/permutations-ii/
+ * 47. 全排列 II
+ * @author MyPC
+ *
+ */
 public class 变种二 {
 	public static void main(String[] args) {
 		int[] nums = new int[] {1,1,1,2};

@@ -1,5 +1,10 @@
 package Day_38;
-
+/***
+ * https://leetcode-cn.com/problems/unique-paths/
+ * 62. 不同路径
+ * @author MyPC
+ *
+ */
 public class FindWay {
 	// 递归(过一半的用例就超时)
 	public int uniquePaths(int m, int n) {

@@ -1,7 +1,12 @@
 package Day_29;
 
 import java.util.ArrayList;
-
+/****
+ * https://leetcode-cn.com/problems/create-maximum-number/
+ * 321. 拼接最大数
+ * @author MyPC
+ *
+ */
 public class MaxNumber {
     public int[] maxNumber(int[] nums1, int[] nums2, int k) {
     	ArrayList<Integer> tmp1 = new ArrayList<Integer>();
