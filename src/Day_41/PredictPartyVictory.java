@@ -1,7 +1,5 @@
 package Day_41;
 
-import java.util.ArrayList;
-
 public class PredictPartyVictory {
 	public String predictPartyVictory(String senate) {
 		char[] people = senate.toCharArray();
