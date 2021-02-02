@@ -16,11 +16,10 @@ public class MyPow {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double a;
-		int b;
+
 		Scanner sc = new Scanner(System.in);
-		a = sc.nextDouble();
-		b = sc.nextInt();
+		double a = sc.nextDouble();
+		int b = sc.nextInt();
 		System.out.println(myPow(a,b));
 		sc.close();
 
